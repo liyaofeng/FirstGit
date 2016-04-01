@@ -95,3 +95,8 @@ index 76d770f..a9c5755 100644
 
 让工作区回到最近的暂存区或者仓库代码
 $ git checkout -- readme.txt
+
+丢弃暂存区的内容
+$ git reset HEAD readme.txt
+Unstaged changes after reset:
+M       readme.txt
