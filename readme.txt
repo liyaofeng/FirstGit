@@ -92,3 +92,6 @@ index 76d770f..a9c5755 100644
  Git has a mutable index called stage.
 -Git tracks changes.
 +Git tracks changes of files.
+
+让工作区回到最近的暂存区或者仓库代码
+$ git checkout -- readme.txt
