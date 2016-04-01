@@ -72,3 +72,10 @@ HEAD is now at ea34578 add distributed
 返回指定版本
 $ git reset --hard 3628164
 HEAD is now at 3628164 append GPL
+
+查看命令日志
+$ git reflog
+ea34578 HEAD@{0}: reset: moving to HEAD^
+3628164 HEAD@{1}: commit: append GPL
+ea34578 HEAD@{2}: commit: add distributed
+cb926e7 HEAD@{3}: commit (initial): wrote a readme file
