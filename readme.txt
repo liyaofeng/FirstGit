@@ -100,3 +100,11 @@ $ git checkout -- readme.txt
 $ git reset HEAD readme.txt
 Unstaged changes after reset:
 M       readme.txt
+
+删除文件
+$ git rm test.txt
+rm 'test.txt'
+$ git commit -m "remove test.txt"
+[master d17efd8] remove test.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 test.txt
