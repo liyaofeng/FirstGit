@@ -130,3 +130,6 @@ Total 23 (delta 6), reused 0 (delta 0)
 To git@github.com:michaelliao/learngit.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
+
+第一次推送内容后，使用以下命令提价
+$ git push origin master
