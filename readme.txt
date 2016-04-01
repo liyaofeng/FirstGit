@@ -108,3 +108,25 @@ $ git commit -m "remove test.txt"
 [master d17efd8] remove test.txt
  1 file changed, 1 deletion(-)
  delete mode 100644 test.txt
+
+SSH加密，主目录下运行
+$ ssh-keygen -t rsa -C "youremail@example.com”
+
+id_rsa为私密钥匙，id_rsa.pub为公钥，复制id_rsa.pub的内容
+iMacTest:~ test$ cd .ssh
+iMacTest:.ssh test$ ls -a
+.		..		id_rsa		id_rsa.pub
+
+仓库目录下运行，将本地仓库和给他github仓库关联
+$ git remote add origin git@github.com:michaelliao/learngit.git
+
+将本地仓库的内容推送到github仓库，第一次加上-u参数，不仅把内容推送到其他分支，还把自己和其他分支关联起来
+$ git push -u origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 13.73 KiB, done.
+Total 23 (delta 6), reused 0 (delta 0)
+To git@github.com:michaelliao/learngit.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
