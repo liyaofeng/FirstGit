@@ -64,3 +64,11 @@ $ git log --pretty=oneline
 3628164fb26d48395383f8f31179f24e0882e1e0 append GPL
 ea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributed
 cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
+
+返回上个版本，head表示当前版本，head^^表示上上个版本，head~100表示上100个版本
+$ git reset --hard HEAD^
+HEAD is now at ea34578 add distributed
+
+返回指定版本
+$ git reset --hard 3628164
+HEAD is now at 3628164 append GPL
