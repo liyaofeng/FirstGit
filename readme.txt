@@ -58,3 +58,9 @@ Author: Michael Liao <askxuefeng@gmail.com>
 Date:   Mon Aug 19 17:51:55 2013 +0800
 
     wrote a readme file
+
+简单查看提交日志
+$ git log --pretty=oneline
+3628164fb26d48395383f8f31179f24e0882e1e0 append GPL
+ea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributed
+cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
