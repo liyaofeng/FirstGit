@@ -226,4 +226,15 @@ $ git remote -v
 origin  git@github.com:michaelliao/learngit.git (fetch)
 origin  git@github.com:michaelliao/learngit.git (push)
 
-4444444444
+把远程分支抓取到本地
+$ git checkout -b dev origin/dev
+
+指定本地分支与远程分支的链接
+$ git branch --set-upstream dev origin/dev
+Branch dev set up to track remote branch dev from origin.
+
+把远程更新抓取到本地
+$ git pull
+Auto-merging hello.py
+CONFLICT (content): Merge conflict in hello.py
+Automatic merge failed; fix conflicts and then commit the result.
