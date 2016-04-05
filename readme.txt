@@ -144,7 +144,7 @@ $ cd gitskills
 $ ls
 README.md
 
-创建分支
+创建并切换分支
 $ git checkout -b dev
 Switched to a new branch 'dev'
 
@@ -157,3 +157,18 @@ Switched to branch 'dev'
 $ git branch
 * dev
   master
+
+切换分支
+$ git checkout master
+Switched to branch 'master'
+
+合并分支
+$ git merge dev
+Updating d17efd8..fec145a
+Fast-forward
+ readme.txt |    1 +
+ 1 file changed, 1 insertion(+)
+
+删除分支
+$ git branch -d dev
+Deleted branch dev (was fec145a).
