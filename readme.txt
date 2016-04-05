@@ -187,3 +187,32 @@ $ git log --graph --pretty=oneline --abbrev-commit
 |/
 *   59bc1cb conflict fixed
 ...
+
+存储工作现场
+$ git stash
+Saved working directory and index state WIP on dev: 6224937 add merge
+HEAD is now at 6224937 add merge
+
+获取存储的工作现场列表
+$ git stash list
+stash@{0}: WIP on dev: 6224937 add merge
+
+恢复工作现场，使用git stash apply 命令不会把存储的工作现场删除，要手动执行git stash drop 命令来删除，git stash pop 恢复的同时把内容也删除了
+$ git stash pop
+# On branch dev
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   hello.py
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   readme.txt
+#
+Dropped refs/stash@{0} (f624f8e5f082f2df2bed8a4e09c12fd2943bdd40)
+
+如果分支别有合并，删除失败，可以使用强制删除
+$ git branch -D feature-vulcan
+Deleted branch feature-vulcan (was 756d4af).
