@@ -226,5 +226,4 @@ $ git remote -v
 origin  git@github.com:michaelliao/learngit.git (fetch)
 origin  git@github.com:michaelliao/learngit.git (push)
 
-1111111111111111111111
-3333333333333333333333
+4444444444
