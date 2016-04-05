@@ -133,3 +133,13 @@ Branch master set up to track remote branch master from origin.
 
 第一次推送内容后，使用以下命令提价
 $ git push origin master
+
+从远程仓库克隆
+$ git clone git@github.com:michaelliao/gitskills.git
+Cloning into 'gitskills'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (3/3), done.
+$ cd gitskills
+$ ls
+README.md
