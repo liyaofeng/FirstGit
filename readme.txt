@@ -172,3 +172,18 @@ Fast-forward
 删除分支
 $ git branch -d dev
 Deleted branch dev (was fec145a).
+
+合并分支，不使用Fast Forward，本次合并好创建一个新的commit，所以要加上-m
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ readme.txt |    1 +
+ 1 file changed, 1 insertion(+)
+
+查看分支历史
+$ git log --graph --pretty=oneline --abbrev-commit
+*   7825a50 merge with no-ff
+|\
+| * 6224937 add merge
+|/
+*   59bc1cb conflict fixed
+...
