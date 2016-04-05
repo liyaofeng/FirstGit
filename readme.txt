@@ -216,3 +216,14 @@ Dropped refs/stash@{0} (f624f8e5f082f2df2bed8a4e09c12fd2943bdd40)
 如果分支别有合并，删除失败，可以使用强制删除
 $ git branch -D feature-vulcan
 Deleted branch feature-vulcan (was 756d4af).
+
+查看远程库信息
+$ git remote
+origin
+
+远程库详细信息，没有推送权限看不到push
+$ git remote -v
+origin  git@github.com:michaelliao/learngit.git (fetch)
+origin  git@github.com:michaelliao/learngit.git (push)
+
+1111111111111111111111
