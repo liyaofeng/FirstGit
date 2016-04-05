@@ -143,3 +143,17 @@ Receiving objects: 100% (3/3), done.
 $ cd gitskills
 $ ls
 README.md
+
+创建分支
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+-b参数表示创建并切换，相当于以下两条命令
+$ git branch dev
+$ git checkout dev
+Switched to branch 'dev'
+
+查看当前分支
+$ git branch
+* dev
+  master
